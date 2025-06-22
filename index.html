@@ -94,8 +94,29 @@
         </section>
 
         <!--Form-->
-        <section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label class="form-label" for="name">Name:</label>
+                <input class="form-control" type="text" id="name" placeholder="Your name" required autofocus><br>
 
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" name="message"
+                    placeholder="Share your thoughts about Ahmedabdad" required></textarea><br>
+
+                <label class="form-label" for="season">Best Time to Visit:</label>
+                <select class="form-control" id="season" name="season">
+                    <option value="winter">Winter</option>
+                    <option value="monsoon">Monsoon</option>
+                    <option value="summer">Summer</option>
+                </select><br>
+
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="you@emxample.com"><br>
+
+                <button type="submit">Submit</button>
+
+            </form>
         </section>
     </aside>
 
