@@ -136,3 +136,32 @@ a:hover {
 a:active {
     color: red;
 }
+
+/* Table style */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+    font-variant: small-caps;
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+td,
+th {
+    padding: 1rem;
+    border: 0.1rem solid #999;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
