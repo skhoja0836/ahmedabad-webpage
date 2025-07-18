@@ -98,3 +98,14 @@ iframe {
     border: 0.3rem solid #000;
     width: 100%;
 }
+
+/* Quote Section Style */
+section:nth-of-type(3) {
+    border: 0.2rem solid #333;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+    width: 75%;
+    margin: 1rem auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: #444;
+    padding: 1rem;
+}
