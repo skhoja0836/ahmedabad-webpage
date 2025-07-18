@@ -6,3 +6,12 @@ html {
     font: italic small-caps bold 20px/1.5 'Sagoe UI';
     background-color: #f9f9f9;
 }
+
+/* Body Style */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 0.2rem solid #ccc;
+    background-color: #ffffff;
+}
