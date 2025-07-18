@@ -90,3 +90,11 @@ figcaption {
     font-variant: small-caps;
     text-align: center;
 }
+
+/* Youtube Video */
+iframe {
+    display: block;
+    margin: 1rem auto;
+    border: 0.3rem solid #000;
+    width: 100%;
+}
