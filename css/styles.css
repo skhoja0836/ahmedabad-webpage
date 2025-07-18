@@ -15,3 +15,23 @@ body {
     border: 0.2rem solid #ccc;
     background-color: #ffffff;
 }
+
+/* CSS to place main and aside side by side */
+main,
+aside {
+    padding: 1.5 rem;
+}
+
+main {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+}
+
+footer {
+    clear: both;
+}
