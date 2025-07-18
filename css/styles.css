@@ -109,3 +109,30 @@ section:nth-of-type(3) {
     color: #444;
     padding: 1rem;
 }
+
+/* List and Link styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+a:active {
+    color: red;
+}
