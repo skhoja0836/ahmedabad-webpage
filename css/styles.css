@@ -95,6 +95,13 @@ iframe {
     box-sizing: border-box;
 }
 
+main {
+    float: left;
+    width: 70%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
 /* List and Link styles */
 ul {
     list-style: none;
@@ -177,6 +184,11 @@ tr:hover {
         float: none;
         width: 100%;
         padding: 1rem 0;
+    }
+
+    main {
+        float: none;
+        width: 100%;
     }
 
     .form-control {
