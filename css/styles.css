@@ -14,61 +14,56 @@ body {
 /* CSS to place main and aside side by side */
 header,
 footer {
-    background-color: #3c3c3c;
+    background-color: linear-gradient(to right, white, #007bff);
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
-h1,
-h2 {
-    color: #2c3e50;
+aside {
+    float: left;
+    width: 25%;
+    padding: 15px;
+    margin-right: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 main {
-    float: left;
-    width: 65%;
-    padding: 20px;
+    float: right;
+    width: 70%;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-aside {
-    float: right;
-    width: 30%;
-    padding: 20px;
-    background-color: #eaeaea;
+body::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1,
+h2 {
+    color: #007bff;
 }
 
 footer {
     clear: both;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+blockquote {
+    background-color: #e6f2ff;
+    border-left: 5px solid #007bff;
+    padding: 10pox;
+    font-style: italic;
 }
 
 figure {
-    margin: 0;
-    padding: 0;
+    text-align: center;
 }
 
 figcaption {
     font-size: 0.9em;
-    color: #555;
-}
-
-blockquote {
-    font-style: italic;
-    background-color: #fff8dc;
-    border-left: 0.5rem solid #f39c12;
-    margin: 10px;
-    padding: 10px;
-}
-
-q {
-    font-style: italic;
     color: #555;
 }
 
@@ -86,35 +81,24 @@ td {
 }
 
 th {
-    background-color: #f39c12;
+    background-color: #007bff;
     color: white;
-}
-
-a {
-    color: #2980b9;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 .form-label {
     font-weight: bold;
-    display: block;
-    margin-top: 10px;
 }
 
 .form-control {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border-radius: 5px;
     border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-button[type="submit"] {
-    background-color: #3498db;
+button {
+    background-color: #007bff;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -122,6 +106,20 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
-    background-color: #2980b9;
+buttonhover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
 }
