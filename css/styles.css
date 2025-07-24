@@ -20,35 +20,32 @@ footer {
     padding: 20px 0;
 }
 
-aside {
-    float: left;
-    width: 25%;
-    padding: 15px;
-    margin-right: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
 }
 
 main {
-    float: right;
-    width: 70%;
+    width: 68%;
     background-color: #ffffff;
     padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-body::after {
-    content: "";
-    display: table;
-    clear: both;
+
+aside {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1,
 h2 {
     color: #007bff;
-}
-
-footer {
-    clear: both;
 }
 
 blockquote {
@@ -106,7 +103,7 @@ button {
     cursor: pointer;
 }
 
-buttonhover {
+button:hover {
     background-color: #0056b3;
 }
 
@@ -122,4 +119,16 @@ a:hover {
 iframe {
     max-width: 100%;
     height: auto;
+}
+
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    main,
+    aside {
+        width: 100%;
+    }
+
 }
