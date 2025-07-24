@@ -19,19 +19,19 @@ body {
 /* CSS to place main and aside side by side */
 main,
 aside {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 main {
     float: left;
-    width: 70%;
-    padding: 1.5rem;
+    width: 66%;
+    padding: 1rem;
 }
 
 aside {
     float: right;
     width: 30%;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 footer {
