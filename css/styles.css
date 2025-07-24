@@ -2,197 +2,126 @@
     Student Number: 9050836
 */
 
-html {
-    font: italic small-caps bold 20px/1.5 'Segoe UI', Tahoma, sans-serif;
-    background-color: #f9f9f9;
-}
-
 /* Body Style */
 body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    border: 0.2rem solid #ccc;
-    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
 /* CSS to place main and aside side by side */
 header,
 footer {
-    clear: both;
-    text-align: center;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background-color: #3c3c3c;
     color: white;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    clear: both;
-}
-
-section h2 {
-    color: #333;
-    font-variant: small-caps;
-    font-style: italic;
-    font-weight: bold;
-    font-family: Georgia, serif;
-    text-align: left;
-}
-
-blockquote {
-    font-style: italic;
-    background-color: #f1f1f1;
-    padding: 1rem;
-    border-left: 0.5rem solid #888;
-    width: 80%;
-    margin: 1rem auto;
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-/* Gallery */
-figure {
-    border: 0.2rem solid #ccc;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    background-color: #f5f5f5;
-
-}
-
-figure img {
-    display: block;
-    border: 0.2rem solid #aaa;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 0.5rem;
-}
-
-figcaption {
-    font-size: 0.8rem;
-    font-variant: small-caps;
     text-align: center;
+    padding: 20px 0;
 }
 
-/* Youtube Video */
-iframe {
-    display: block;
-    margin: 1rem auto;
-    border: 0.3rem solid #000;
-    width: 100%;
-}
-
-.post-video-container {
-    overflow: hidden;
-    margin-top: 2rem;
-}
-
-.post-video-container aside {
-    float: left;
-    width: 30%;
-    padding: 1.5rem;
-    background-color: #e8e8e8;
-    box-sizing: border-box;
+h1,
+h2 {
+    color: #2c3e50;
 }
 
 main {
     float: left;
-    width: 70%;
-    padding: 1.5rem;
-    box-sizing: border-box;
+    width: 65%;
+    padding: 20px;
 }
 
-/* List and Link styles */
-ul {
-    list-style: none;
+aside {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    background-color: #eaeaea;
+}
+
+footer {
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+figure {
+    margin: 0;
     padding: 0;
 }
 
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #fff8dc;
+    border-left: 0.5rem solid #f39c12;
+    margin: 10px;
+    padding: 10px;
+}
+
+q {
+    font-style: italic;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f39c12;
+    color: white;
+}
+
 a {
+    color: #2980b9;
     text-decoration: none;
-}
-
-a:link {
-    color: blue;
-}
-
-a:visited {
-    color: purple;
 }
 
 a:hover {
     text-decoration: underline;
-    color: darkblue;
 }
 
-a:active {
-    color: red;
-}
-
-/* Table style */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2rem;
-}
-
-th {
-    text-align: left;
-    font-weight: bold;
-    font-variant: small-caps;
-    background-color: #e0e0e0;
-    color: #000;
-    padding: 1rem;
-    border: 0.1rem solid #000;
-}
-
-td {
-    padding: 1rem;
-    border: 0.1rem solid #000;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #ddd;
-}
-
-/* Form Styles */
 .form-label {
-    color: #333;
-    font-variant: small-caps;
     font-weight: bold;
+    display: block;
+    margin-top: 10px;
 }
 
 .form-control {
-    padding: 0.5rem;
-    border: 0.1rem solid #ccc;
-    border-radius: 0.3rem;
-    margin-bottom: 1rem;
-    width: 20rem;
-    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-@media screen and (max-width: 768px) {
-    html {
-        font-size: 16px;
-    }
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    .post-video-container aside {
-        float: none;
-        width: 100%;
-        padding: 1rem 0;
-    }
-
-    main {
-        float: none;
-        width: 100%;
-    }
-
-    .form-control {
-        width: 100%;
-    }
-
+button[type="submit"]:hover {
+    background-color: #2980b9;
 }
