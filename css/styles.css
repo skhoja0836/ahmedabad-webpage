@@ -2,13 +2,18 @@
     Student Number: 9050836
 */
 
+html {
+    font: italic small-caps 20px/1.6 "Arial", sans-serif;
+    background-color: #f4f4f4;
+}
+
 /* Body Style */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 0.3rem solid #ccc;
+    background-color: #ffffff;
 }
 
 /* CSS to place main and aside side by side */
@@ -25,27 +30,42 @@ header h1 {
     font-weight: bold;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
-}
-
 main {
+    float: left;
     width: 70%;
+    padding: 1.5rem;
     background-color: #ffffff;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
 aside {
+    float: right;
     width: 30%;
+    padding: 1.5rem;
     background-color: #ffffff;
+}
+
+footer {
+    clear: both;
+}
+
+footer {
+    background: linear-gradient(to right, white, #007bff);
+    text-align: center;
     padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+section h2 {
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Verdana", sans-serif;
+    color: #003366;
+    text-align: center;
 }
 
 h1,
@@ -54,19 +74,47 @@ h2 {
 }
 
 blockquote {
-    background-color: #e6f2ff;
-    border-left: 5px solid #007bff;
-    padding: 10pox;
     font-style: italic;
+    background-color: #e6f2ff;
+    border-left: 0.5rem solid #007bff;
+    padding: 1rem;
+    width: 80%;
+    margin: 2rem auto;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 1)
+}
+
+section:nth-of-type(3) {
+    border: 0.2rem solid #999;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    width: 80%;
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    color: #444;
+    padding: 1rem;
+    margin: 2rem auto;
 }
 
 figure {
+    border: 0.2rem solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #fafafa;
     text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border: 0.2rem solid #aaa;
+    border-radius: 0.5rem;
 }
 
 figcaption {
     font-size: 0.9em;
+    font-variant: small-caps;
     color: #555;
+    margin-top: 0.5rem;
 }
 
 table {
