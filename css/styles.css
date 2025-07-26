@@ -177,15 +177,19 @@ tr:hover {
 }
 
 .form-label {
+    font-variant: small-caps;
     font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .form-control {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 20rem;
+    padding: 1rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 button {
@@ -201,15 +205,28 @@ button:hover {
     background-color: #0056b3;
 }
 
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
 
+    main,
+    aside {
+        float: none;
+        width: 100;
+    }
 
+    figure,
+    section,
+    iframe {
+        width: 100%;
+    }
 
+    .form-control {
+        width: 100%;
+    }
 
-footer {
-    background: linear-gradient(to right, white, #007bff);
-    text-align: center;
-    padding: 15px;
-    color: black;
-    font-weight: bold;
-    margin-top: 20px;
+    body {
+        padding: 1rem;
+    }
 }
