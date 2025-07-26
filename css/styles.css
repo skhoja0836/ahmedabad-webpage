@@ -24,7 +24,7 @@ body {
 
 /* CSS to place main and aside side by side */
 header {
-    background-color: linear-gradient(to right, white, #007bff);
+    background: linear-gradient(to right, white, #007bff);
     color: black;
     text-align: center;
     padding: 20px;
