@@ -2,6 +2,12 @@
     Student Number: 9050836
 */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
     font: italic small-caps 20px/1.6 "Arial", sans-serif;
     background-color: #f4f4f4;
@@ -45,11 +51,14 @@ aside {
     background-color: #ffffff;
 }
 
-footer {
+.container::after {
+    content: "";
+    display: table;
     clear: both;
 }
 
 footer {
+    clear: both;
     background: linear-gradient(to right, white, #007bff);
     text-align: center;
     padding: 15px;
